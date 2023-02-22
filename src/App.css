@@ -21,6 +21,11 @@ header {
   font-size: larger;
 }
 
+.head-item {
+  text-decoration: none;
+  color: black;
+}
+
 .head-item :hover {
   background-color: wheat;
 }
