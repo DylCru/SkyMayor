@@ -2,11 +2,15 @@ import React, {useState, useEffect} from "react";
 
 
 export default function Mayor() {
-    const [data, setData] = useState([])
+    const [mayorData, setMayorData] = useState([])
 
     useEffect(() => {
-        fetch("api.hypixel.net/resources/skyblock/election")
+        fetch("https://api.hypixel.net/resources/skyblock/election")
         .then(res => res.json())
-        .then(data => setData(data.current))
+        .then(data => setMayorData(data.mayor))
     }, [])
+
+    return (
+        <p>{mayorData.name}</p>
+    )
 }
