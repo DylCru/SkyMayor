@@ -1,0 +1,26 @@
+body {
+  margin: 0 auto;
+}
+
+
+header {
+  background: rgb(13,5,154);
+  background: linear-gradient(to left, lightblue, azure);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Kanit';
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.head-items {
+  display: flex;
+  gap: 100px;
+  font-size: larger;
+}
+
+.head-item :hover {
+  background-color: wheat;
+}
